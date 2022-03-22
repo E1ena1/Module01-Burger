@@ -141,9 +141,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     color: #FFFFFF;
-    padding-top: 100px;
-    padding-bottom: 118px;
-    padding-left: 100px;
+    padding: 100px 0 118px 100px;
 }
 .banner-title {
     font-family: 'Nunito Sans', sans-serif;
