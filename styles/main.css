@@ -141,13 +141,16 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     color: #FFFFFF;
+    background-position: center center;
     padding: 100px 0 118px 100px;
+    margin-bottom: 100px;
 }
 .banner-title {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 60px;
     font-weight: 900;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 .banner-title span {
     font-family: 'Open Sans', sans-serif;
@@ -156,9 +159,10 @@ header {
     line-height: 18px;
     text-transform: uppercase;
     display: block;
-    max-width: 59px;
+    max-width: 96px;
+    text-align: center;
     background-color: #F37335;
-    padding: 5px 19.73px 5px 17.27px;
+    padding: 5px 0;
     border-radius: 14px;
     margin-bottom: 6px;
 }
@@ -168,6 +172,7 @@ header {
     font-size: 15px;
     line-height: 24px;
     color: #FAF9F9;
+    margin-top: 0;
     margin-bottom: 34px;
 }
 .banner-link {
@@ -181,4 +186,98 @@ header {
     background-color: #FBB731;
     padding: 20px 25px 19px 25px;
     border-radius: 5px;
+}
+.menu {
+    font-family: 'Nunito Sans', sans-serif;
+}
+.menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+.menu-title {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #1B2A49;
+    text-transform: uppercase;
+    margin: 0;
+}
+.menu-select {
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #DEDEDE;
+    padding: 13px 30px;
+    border-radius: 22px;
+    color: #443737;
+    font-size: 15px;
+    appearance: none;
+    flex-basis: 279px;
+    background-image: url(../images/arrow.svg);
+    background-size: 12.79px 7.75px;
+    background-repeat: no-repeat;
+    background-position: 89% center;
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 20px;
+    margin-bottom: 100px;
+}
+.menu-grid-item {
+    text-align: center;
+}
+.menu-grid-cover {
+    width: 100%;
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 21px;
+}
+.menu-grid-cover img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    width: 100%;
+    height: 430px;
+}
+.menu-grid-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #1B2A49;
+    line-height: 38px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.menu-grid-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #979797;
+    line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 19px;
+}
+.menu-grid-btn {
+    display: flex;
+    border: none;
+    background-color: #FBB731;
+    padding: 10px 35px 10px 30px;
+    border-radius: 5px;
+    gap: 9px;
+    margin: 0 auto;
+}
+.menu-grid-icon {
+    background-image: url(../images/cart-menu.svg);
+    width: 18px;
+    height: 18px;
+    color: #443737;
+}
+.menu-grid-text{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #1E2F40;
 }
