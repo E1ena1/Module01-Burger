@@ -18,6 +18,12 @@ header {
       padding-top: 28px;
       padding-bottom: 23px;
 }
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 76.7%;
+}
 .header-logo {
     display: block;
     background-image: url(../images/logo.svg);
@@ -184,8 +190,13 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     background-color: #FBB731;
-    padding: 20px 25px 19px 25px;
+    padding: 19px 24px 18px 24px;
     border-radius: 5px;
+    border: 1px solid #FBB731;
+}
+.banner-link:hover {
+    background-color: transparent;
+    color: #FBB731;
 }
 .menu {
     font-family: 'Nunito Sans', sans-serif;
@@ -268,6 +279,10 @@ header {
     gap: 9px;
     margin: 0 auto;
 }
+.menu-grid-btn:hover {
+    background-color: #F37335;
+    cursor: pointer;
+}
 .menu-grid-icon {
     background-image: url(../images/cart-menu.svg);
     width: 18px;
@@ -306,7 +321,7 @@ header {
     margin-bottom: 19px;
     color: #ffffff;
 }
-.footer-item li {
+.footer-list li {
     margin-bottom: 9px;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
@@ -314,10 +329,13 @@ header {
     font-weight: 700;
     line-height: 24px;
 }
-.footer-item a {
+.footer-list a {
     color: #DEDEDE;
     text-decoration: none;
     font-weight: 400;
+}
+.footer-list a:hover {
+    color: #FBB731;
 }
 .footer-item span {
     color: #DEDEDE;
@@ -325,16 +343,21 @@ header {
     font-weight: 400;
     margin-bottom: 2px;
 }
-.footer-tel ul {
-    font-size: 20px;
-    font-weight: 900;
-    color: #FBB731;
+.footer-list-tel {
     margin-top: 0;
 }
-.footer-tel li {
+.footer-list-tel li {
     font-size: 20px;
     line-height: 38px;
     color: #FBB731;
+}
+.footer-list-tel a {
+    font-size: 20px;
+    font-weight: 900;
+    color: #FBB731;
+}
+.footer-list-tel a:hover {
+    color: #DEDEDE;
 }
 .footer-list {
     padding-left: 0;
