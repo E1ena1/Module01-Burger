@@ -150,7 +150,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     color: #FFFFFF;
-    background-position: center center;
+    background-position: 0 center;
     padding: 100px 0 118px 100px;
     margin-bottom: 80px;
 }
@@ -359,8 +359,9 @@ header {
     color: #FBB731;
 }
 .footer-list-tel a {
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 800;
     color: #FBB731;
 }
 .footer-list-tel a:hover {
@@ -538,4 +539,73 @@ header {
     line-height: 56px;
     margin-bottom: 10px;
     margin-top: 0;
+}
+
+/* Responsive*/
+@media (max-width: 1000px) {
+    .container {
+        max-width: 738px;
+    }
+    .header-logo {
+        width: 150px;
+        height: 48px;
+        background-size: contain;
+    }
+    .header-nav {
+        gap: 22px;
+        padding-right: 0;
+    }
+    .header-item {
+        flex-basis: 75.5%;
+    }
+    .bg {
+        margin-bottom: 72px;
+    }
+    .banner-box {
+        background-position: -79px center;
+        padding: 99px 41px 120px 39px;
+        margin-bottom: 61px;
+    }
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 15px;
+        margin-bottom: 68px;
+    }
+    .extra-container {
+        overflow: hidden;
+        padding-right: 0;
+    }
+    .extra-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px 15px;
+    }
+    .extra-grid-cover {
+        height: 320px;
+        width: 275px;
+    }
+    .extra-grid-cover img {
+        object-fit: contain;
+        width: 104%;
+    }
+    .footer {
+        padding-top: 62px;
+        padding-bottom: 40px;
+        margin-top: 71px;
+    }
+    .footer-box {
+        display: grid;
+        grid-template-columns: repeat(5, 20%)
+    }
+    .footer-item-1 {
+        grid-column: 1/2;
+    }
+    .footer-item-2 {
+        grid-column: 2/4;
+    }
+    .footer-item-3 {
+        grid-column: 4/6;
+    }
+    .footer-tel {
+        grid-column: 2/4;
+    }
 }
