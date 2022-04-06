@@ -665,6 +665,7 @@ header {
     }
     .menu-other .menu-grid-cover, .menu-other .menu-grid-cover img {
         height: 320px;
+        width: 100%;
     }
     .footer {
         padding-top: 62px;
